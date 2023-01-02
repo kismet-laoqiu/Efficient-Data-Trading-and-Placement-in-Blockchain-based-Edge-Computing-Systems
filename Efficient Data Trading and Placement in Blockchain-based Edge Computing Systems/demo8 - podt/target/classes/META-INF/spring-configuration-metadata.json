@@ -1,0 +1,50 @@
+{
+  "groups": [
+    {
+      "name": "block",
+      "type": "com.example.demo.blockchain.util.BlockCache",
+      "sourceType": "com.example.demo.blockchain.util.BlockCache"
+    }
+  ],
+  "properties": [
+    {
+      "name": "block.address",
+      "type": "java.lang.String",
+      "description": "要连接的节点地址",
+      "sourceType": "com.example.demo.blockchain.util.BlockCache"
+    },
+    {
+      "name": "block.block-chain",
+      "type": "java.util.List<com.example.demo.blockchain.block.Block>",
+      "description": "当前节点的区块链结构",
+      "sourceType": "com.example.demo.blockchain.util.BlockCache"
+    },
+    {
+      "name": "block.difficulty",
+      "type": "java.lang.Integer",
+      "description": "挖矿的难度系数",
+      "sourceType": "com.example.demo.blockchain.util.BlockCache",
+      "defaultValue": 0
+    },
+    {
+      "name": "block.p2pport",
+      "type": "java.lang.Integer",
+      "description": "当前节点p2pserver端口号",
+      "sourceType": "com.example.demo.blockchain.util.BlockCache",
+      "defaultValue": 0
+    },
+    {
+      "name": "block.packed-transactions",
+      "type": "java.util.List<com.example.demo.blockchain.transaction.Transaction>",
+      "description": "已打包保存的业务数据集合",
+      "sourceType": "com.example.demo.blockchain.util.BlockCache"
+    },
+    {
+      "name": "block.sockets-list",
+      "type": "java.util.List<org.java_websocket.WebSocket>",
+      "description": "当前节点的socket对象",
+      "sourceType": "com.example.demo.blockchain.util.BlockCache"
+    }
+  ],
+  "hints": []
+}
